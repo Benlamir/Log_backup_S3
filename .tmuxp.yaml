@@ -1,0 +1,9 @@
+session_name: Log_backup_S3
+windows:
+  - window_name: ide
+    layout: main-vertical
+    options:
+      main-pane-width: 65%
+    panes:
+        - nvim .
+        - clear

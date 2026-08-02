@@ -2,8 +2,10 @@ import boto3, logging
 import boto3.session
 from pathlib import Path
 
+#--- basic config for python to display logging info in the terminal
 logging.basicConfig(level=logging.INFO)
 
+#---this class is responsible for configuring the lifecycle of the log_bucket
 class S3_lifecycleManager:
     def __init__(self, profile_name, bucket_name):
         session = boto3.Session(profile_name=profile_name)

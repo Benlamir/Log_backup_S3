@@ -153,17 +153,17 @@ Then add the cron job and save the file.
 # 📁 Project Structure
 
 ```text
-Log_backup_S3/
-├── generate_logs.py
+Log_backup_S3/               <-- Your existing local folder
 ├── s3_backup.py
-├── s3_lifecycle.py
-├── policy.json
-├── requirements.txt
-├── .gitignore
-├── README.md
-├── logs/
-└── venv/
+├── generate_logs.py
+├── policy.json              <-- Your existing IAM rules!
+├── ...
+└── terraform/               <-- NEW: Your Infrastructure folder
+    ├── provider.tf
+    ├── main.tf
+    └── variables.tf
 ```
+
 
 ---
 

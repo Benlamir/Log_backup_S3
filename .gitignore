@@ -1,2 +1,6 @@
 policy.json
 venv/
+terraform/terraform.tfstate
+terraform/terraform.tfstate.backup
+.env
+terraform/.terraform/
